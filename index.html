@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>music</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="music">
+        <div class="record">
+            <div class="recordlist"></div>
+        </div>
+        <div class="rocker">
+            <canvas id="canvas1" width="80" height="230"></canvas>
+        </div>
+        <div class="play">
+            <div class="play-tittle">
+                <h1 id="tittle">幻听</h1>
+                <span id="singer">许嵩</span>&nbsp;
+                <span id="records">专辑：幻听</span>
+            </div>
+            <div class="play-tag clear">
+                <div class="play-l">
+                    <span id="prev">&#xe503;</span>
+                    <span id="stop">&#xe62c;</span>
+                    <span id="next">&#xe502;</span>
+                </div>
+                <div class="play-r">
+                    <span id="rand">&#xe863;</span>
+                    <span id="again">&#xe679;</span>
+                    <div class="big">
+                        <span id="muted">&#xe615;</span> 
+                        <div id="voice">
+                            <div id="voices"></div>    
+                        </div>   
+                    </div>         
+                </div>
+                <div class="play-b">
+                   <b>
+                    <span id="had">00:00</span>/
+                    <span id="all">00:00</span>
+                   </b>
+                   <i>
+                      <main>
+                          <div class="has"></div>
+                        </main>
+                        <div class="drag"></div>
+                   </i>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="msg">
+                <div class="msglist">歌曲</div>
+                <div class="msglist">歌手</div>
+                <div class="msglist">专辑</div>
+            </div>
+            <ul class="sing">
+            </ul>
+        </div>
+    </div>
+    <audio id="audio" src="audio/许嵩-幻听.mp3" ></audio>
+</body>
+<script src="js/index.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+    new music();
+</script>
+</html>
